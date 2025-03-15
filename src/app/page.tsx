@@ -23,24 +23,15 @@ export default function Home() {
             </p>
           </div>
           <div className="flex justify-between w-full items-center px-14 pt-14">
-            <button className="bg-darkCyan rounded-full px-10 text-white py-4 flex items-center justify-center">
+            <button className="bg-darkCyan rounded-full px-10 text-white py-4 flex items-center justify-center ">
               Back this project
             </button>
-            <div className="flex">
-            <span>
-              <Image src={bookmarkImg} alt="bookmark" />
-            </span>
-            <span className="bg-darkGray/50 text-darkGray rounded-r-3xl px-10 flex items-center justify-center">
-              Bookmark
-            </span>
+            <div className="bg-darkGray/20 cursor-pointer  rounded-full pr-10 flex items-center gap-3 font-commissioner justify-center">
+              <span>
+                <Image src={bookmarkImg} alt="bookmark" />
+              </span>
+              <span className="text-darkGray font-bold">Bookmark</span>
             </div>
-            {/* <button className="bg-darkCyan rounded-full text-white py-4 flex items-center justify-center">
-            <span>
-              <Image src={bookmarkImg} alt="bookmark" />
-            </span>
-              Back this project
-            </button> */}
-
           </div>
         </div>
       </div>
