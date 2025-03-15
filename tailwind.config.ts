@@ -9,9 +9,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+       moderateCyan: "hsl(176, 50%, 47%)",
+       darkCyan: "hsl(176, 72%, 28%)",
+       black: "hsl(0, 0%, 0%)",
+       darkGray: "hsl(0, 0%, 48%)",
       },
+      fontFamily: {
+        commissioner:['var(--font-commissioner)', 'sans-serif'],
+      }
     },
   },
   plugins: [],
