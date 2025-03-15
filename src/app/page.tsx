@@ -1,12 +1,14 @@
 import Image from "next/image";
 import brandLogo from "../../public/images/logo-mastercraft.svg";
 import bookmarkImg from "../../public/images/icon-bookmark.svg";
+import SummaryCard from "./components/SummaryCard";
+import AboutCard from "./components/AboutCard";
 
 export default function Home() {
   return (
     <div>
       <div className="desktop_hero "></div>
-      <div className="flex justify-center absolute top-96 w-full  ">
+      <div className="flex flex-col gap-8 items-center justify-center absolute top-96 w-full  ">
         <div className="bg-white shadow-md border w-[60%] py-16 relative  ">
           <div className="flex justify-center">
             <span className="absolute -top-6 ">
@@ -23,7 +25,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex justify-between w-full items-center px-14 pt-14">
-            <button className="bg-darkCyan rounded-full px-10 text-white py-4 flex items-center justify-center ">
+            <button className="bg-moderateCyan font-bold rounded-full px-10 text-white py-4 flex items-center justify-center ">
               Back this project
             </button>
             <div className="bg-darkGray/20 cursor-pointer  rounded-full pr-10 flex items-center gap-3 font-commissioner justify-center">
@@ -34,6 +36,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <SummaryCard />
+        <AboutCard />
       </div>
     </div>
   );

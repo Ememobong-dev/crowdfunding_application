@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Commissioner } from "next/font/google";
+import { AntdRegistry } from '@ant-design/nextjs-registry';
 import "./globals.css";
+
 
 
 
@@ -29,7 +31,7 @@ export default function RootLayout({
       <body
         className={` ${commissioner.variable} antialiased`}
       >
-        {children}
+       <AntdRegistry>{children}</AntdRegistry>
       </body>
     </html>
   );
