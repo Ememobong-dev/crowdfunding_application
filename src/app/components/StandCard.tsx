@@ -18,7 +18,7 @@ const StandCard = ({
 }: StandCardType) => {
   return (
     <>
-      <div className="bg-white shadow-md border rounded-lg p-8 flex flex-col gap-6 ">
+      <div className="bg-white border font-commissioner rounded-lg p-8 flex flex-col gap-6 ">
         <div className="flex justify-between items-center">
           <p
             className={`text-lg font-bold ${
@@ -61,7 +61,7 @@ const StandCard = ({
               left
             </p>
           </span>
-          <Button md isAvailable={standIsAvailable} />
+          <Button md isAvailable={standIsAvailable} text = {standIsAvailable ? "Select Reward" : "Out of stock"} />
         </div>
       </div>
     </>

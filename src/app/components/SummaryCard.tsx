@@ -4,7 +4,7 @@ import React from "react";
 const SummaryCard = () => {
   return (
     <>
-      <div className="bg-white shadow-md border w-[60%] py-16 px-14  ">
+      <div className="bg-white shadow-md font-commissioner border w-[60%] py-16 px-14  ">
         <div className="divide-x-2 flex gap-28 ">
           <div className="flex flex-col gap-3 pr-10">
             <h3 className="font-bold font-commissioner text-3xl">$89,914</h3>

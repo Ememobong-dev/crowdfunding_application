@@ -3,7 +3,7 @@ import StandCard from "./StandCard";
 const AboutCard = () => {
   return (
     <>
-      <div className="bg-white shadow-md border w-[60%] py-16 px-14  ">
+      <div className="bg-white shadow-md border w-[60%] py-16 px-14 font-commissioner ">
         <div className="flex gap-8 flex-col">
           <span className="text-xl font-bold">About this project</span>
           <p className="leading-loose text-darkGray font-medium">
@@ -19,7 +19,7 @@ const AboutCard = () => {
             USB sticks to be stored under the stand.
           </p>
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 mt-10">
           <StandCard
             standTitle="Bamboo Stand"
             standIsAvailable={true}
