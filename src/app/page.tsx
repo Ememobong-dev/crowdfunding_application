@@ -3,12 +3,13 @@ import brandLogo from "../../public/images/logo-mastercraft.svg";
 import bookmarkImg from "../../public/images/icon-bookmark.svg";
 import SummaryCard from "./components/SummaryCard";
 import AboutCard from "./components/AboutCard";
+import Button from "./components/Button";
 
 export default function Home() {
   return (
     <div>
       <div className="desktop_hero "></div>
-      <div className="flex flex-col gap-8 items-center justify-center absolute top-96 w-full  ">
+      <div className="flex flex-col gap-8 items-center justify-center absolute top-96 w-full pb-20 ">
         <div className="bg-white shadow-md border w-[60%] py-16 relative  ">
           <div className="flex justify-center">
             <span className="absolute -top-6 ">
@@ -25,9 +26,7 @@ export default function Home() {
             </p>
           </div>
           <div className="flex justify-between w-full items-center px-14 pt-14">
-            <button className="bg-moderateCyan font-bold rounded-full px-10 text-white py-4 flex items-center justify-center ">
-              Back this project
-            </button>
+            <Button text="Back this project" />
             <div className="bg-darkGray/20 cursor-pointer  rounded-full pr-10 flex items-center gap-3 font-commissioner justify-center">
               <span>
                 <Image src={bookmarkImg} alt="bookmark" />
