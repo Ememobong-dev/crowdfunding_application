@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 
-type StandCardType = {
+export type StandCardType = {
   standTitle: string;
   standSummary: string;
   standLeft: string;
@@ -19,7 +19,7 @@ const StandCard = ({
   return (
     <>
       <div className="bg-white border font-commissioner rounded-lg p-8 flex flex-col gap-6 ">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col lg:flex-row items-start justify-between lg:items-center">
           <p
             className={`text-lg font-bold ${
               standIsAvailable ? "text-black" : "text-black/45"
@@ -44,7 +44,7 @@ const StandCard = ({
             {standSummary}
           </p>
         </span>
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col lg:flex-row justify-between lg:items-center items-start">
           <span className="flex gap-2 items-center">
             <p
               className={`text-3xl font-bold tracking-wider ${

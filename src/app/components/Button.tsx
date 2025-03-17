@@ -16,10 +16,10 @@ const Button = ({
   return (
     <>
       <button
-        className={`bg-moderateCyan font-commissioner font-bold rounded-full ${
+        className={` font-commissioner font-bold rounded-full ${
           md ? "px-8" : "px-10"
         } ${
-          !isAvailable && "bg-darkGray/25 text-white"
+          isAvailable ? "bg-moderateCyan" : "bg-darkGray/25 text-white"
         }  text-white py-4 flex items-center justify-center`}
         disabled={!isAvailable}
         onClick={handleOnClick}

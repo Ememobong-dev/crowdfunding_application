@@ -3,7 +3,7 @@ import StandCard from "./StandCard";
 const AboutCard = () => {
   return (
     <>
-      <div className="bg-white shadow-md border w-[60%] py-16 px-14 font-commissioner ">
+      <div className="bg-white shadow-md border w-full md:w-[90%] lg:w-[60%] py-16 px-14 font-commissioner ">
         <div className="flex gap-8 flex-col">
           <span className="text-xl font-bold">About this project</span>
           <p className="leading-loose text-darkGray font-medium">
@@ -45,7 +45,7 @@ const AboutCard = () => {
             standTitle="Mahogany Special Edition"
             standIsAvailable={false}
             standLeft="0"
-            standSummary="You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included. "
+            standSummary= "You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included. "
             pledgeLeft={200}
           />
         </div>
